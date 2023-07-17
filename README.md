@@ -1,5 +1,9 @@
 # ToastNotificationGenerator
 Generates toast notifications using PowerShell
+### IMPORTANT!! READ THIS
+```diff
+- It seems my program is being flagged as a trojan. This is a false positive, if you're that scared, use the source code version instead.
+```
 # Usage
 Just launch the application, and enter in anything in the parameters. Then click Generate.
 # Source Code
