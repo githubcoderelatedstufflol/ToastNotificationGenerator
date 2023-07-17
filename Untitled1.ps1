@@ -34,65 +34,55 @@
 
 Add-Type -AssemblyName System.Windows.Forms
 
-# Create the form
 $form = New-Object System.Windows.Forms.Form
 $form.Text = "Toast Notification Generator"
 $form.Size = New-Object System.Drawing.Size(400, 250)
 $form.StartPosition = "CenterScreen"
 
-# Create the app name label
 $lblAppName = New-Object System.Windows.Forms.Label
 $lblAppName.Location = New-Object System.Drawing.Point(10, 20)
 $lblAppName.Size = New-Object System.Drawing.Size(100, 20)
 $lblAppName.Text = "App Name:"
 $form.Controls.Add($lblAppName)
 
-# Create the app name textbox
 $txtAppName = New-Object System.Windows.Forms.TextBox
 $txtAppName.Location = New-Object System.Drawing.Point(120, 20)
 $txtAppName.Size = New-Object System.Drawing.Size(250, 20)
 $form.Controls.Add($txtAppName)
 
-# Create the header label
 $lblHeader = New-Object System.Windows.Forms.Label
 $lblHeader.Location = New-Object System.Drawing.Point(10, 50)
 $lblHeader.Size = New-Object System.Drawing.Size(100, 20)
 $lblHeader.Text = "Title:"
 $form.Controls.Add($lblHeader)
 
-# Create the header textbox
 $txtHeader = New-Object System.Windows.Forms.TextBox
 $txtHeader.Location = New-Object System.Drawing.Point(120, 50)
 $txtHeader.Size = New-Object System.Drawing.Size(250, 20)
 $form.Controls.Add($txtHeader)
 
-# Create the title label
 $lblTitle = New-Object System.Windows.Forms.Label
 $lblTitle.Location = New-Object System.Drawing.Point(10, 80)
 $lblTitle.Size = New-Object System.Drawing.Size(100, 20)
 $lblTitle.Text = "Line 1:"
 $form.Controls.Add($lblTitle)
 
-# Create the title textbox
 $txtTitle = New-Object System.Windows.Forms.TextBox
 $txtTitle.Location = New-Object System.Drawing.Point(120, 80)
 $txtTitle.Size = New-Object System.Drawing.Size(250, 20)
 $form.Controls.Add($txtTitle)
 
-# Create the body label
 $lblBody = New-Object System.Windows.Forms.Label
 $lblBody.Location = New-Object System.Drawing.Point(10, 110)
 $lblBody.Size = New-Object System.Drawing.Size(100, 20)
 $lblBody.Text = "Line 2:"
 $form.Controls.Add($lblBody)
 
-# Create the body textbox
 $txtBody = New-Object System.Windows.Forms.TextBox
 $txtBody.Location = New-Object System.Drawing.Point(120, 110)
 $txtBody.Size = New-Object System.Drawing.Size(250, 20)
 $form.Controls.Add($txtBody)
 
-# Create the generate button
 $btnGenerate = New-Object System.Windows.Forms.Button
 $btnGenerate.Location = New-Object System.Drawing.Point(10, 140)
 $btnGenerate.Size = New-Object System.Drawing.Size(360, 30)
@@ -106,5 +96,4 @@ $btnGenerate.Add_Click({
 })
 $form.Controls.Add($btnGenerate)
 
-# Display the form
 $form.ShowDialog() | Out-Null
